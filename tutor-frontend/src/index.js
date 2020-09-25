@@ -46,10 +46,9 @@ const Header = () => {
 const Banner = ()=>{
   return (
     <div id="banner">
-     <img src="#" alt="Home Page Banner" width="720" height="480">
-       <span><button>Find Tutor</button></span>
-       <span><button>Become a Tutor</button></span>
-     </img>
+     <img src="#" alt="Home Page Banner" width="720" height="480"/>
+     <span><button>Find Tutor</button></span>
+     <span><button>Become a Tutor</button></span>
     </div>
   )
 }
@@ -59,6 +58,7 @@ const Banner = ()=>{
 render(
   <div>
     <Header/>
+    <Banner/>
   </div>,
   document.getElementById('root')
 )
