@@ -1,40 +1,28 @@
 import React from 'react';
 import { render } from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import * as serviceWorker from './serviceWorker';
+import './index.css';
 
-// ReactDOM.render(
-//  <React.StrictMode>
-//    <App />
-//  </React.StrictMode>,
-//  document.getElementById('root')
-// );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.unregister();
 
 
 const Header = () => {
   return (
     <header>
 
-      <nav >
-        <ul>
-          <li><a href="#">Tutoring Jobs</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Log In</a></li>
+      <nav class="navbar">
+        <a href="/"><img src="https://www.logoarena.com/contestimages/public_new/6611/9490_1452633872_image.png" alt="logo" width="250" height="200"/></a>
+        <ul id="nav-link">
+          <li><a href="/">Tutoring Jobs</a></li>
+          <li><a href="/">Sign Up</a></li>
+          <li><a href="/">Log In</a></li>
           <li >
             <a >
               <i ></i><span >Account</span></a>
             <div >
-              <a  href="#">Profile</a>
-              <a  href="#">Settings</a>
+              <a  href="/">Profile</a>
+              <a  href="/">Settings</a>
             </div>
           </li>
-          <li><a href="#">Logout</a></li>
+          <li><a href="/">Logout</a></li>
         </ul>
 
       </nav>
@@ -46,7 +34,7 @@ const Header = () => {
 const Banner = ()=>{
   return (
     <div id="banner">
-     <img src="#" alt="Home Page Banner" width="720" height="480"/>
+     <img src="https://pretoriatutors.com/wp-content/uploads/2017/04/Maths-Background.jpeg" alt="Home Page Banner" width="1920" height="720"/>
      <span><button>Find Tutor</button></span>
      <span><button>Become a Tutor</button></span>
     </div>
