@@ -1,15 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
-
-
+import logo from './LOGO.svg';
 
 const Header = () => {
   return (
     <header>
+      <a href="/" > < img src={logo}
+        alt="logo"
+        width="200"
+        height="150" /> </a>
+      {/* <nav class="navbar" >
 
-      <nav class="navbar">
-        <a href="/"><img src="https://www.logoarena.com/contestimages/public_new/6611/9490_1452633872_image.png" alt="logo" width="250" height="200"/></a>
+
         <ul id="nav-link">
           <li><a href="/">Tutoring Jobs</a></li>
           <li><a href="/">Sign Up</a></li>
@@ -18,35 +21,47 @@ const Header = () => {
             <a >
               <i ></i><span >Account</span></a>
             <div >
-              <a  href="/">Profile</a>
-              <a  href="/">Settings</a>
+              <a href="/">Profile</a>
+              <a href="/">Settings</a>
             </div>
           </li>
           <li><a href="/">Logout</a></li>
         </ul>
 
-      </nav>
+
+      </nav> */}
 
     </header>
-  )
+  );
 }
 
-const Banner = ()=>{
+const Banner = () => {
   return (
-    <div id="banner">
-     <img src="https://pretoriatutors.com/wp-content/uploads/2017/04/Maths-Background.jpeg" alt="Home Page Banner" width="1920" height="720"/>
-     <span><button>Find Tutor</button></span>
-     <span><button>Become a Tutor</button></span>
-    </div>
-  )
+    <section id="banner" >
+      <div id="banner-img" > { /* <img src={process.env.PUBLIC_URL + '/FP-1-Text.svg'} alt="banner-text" width="791" height="187"/> */}
+        <div id="banner-div">
+          <h6 id="banner-heading" > Achieve Top Grades <br/> With Us. </h6>
+          <p id="banner-text" > Education is the most powerful weapen we can use to change. </p>
+          <span>
+            <button id="find-tutor-btn" className="home-btn"> Find Tutor </button>
+            <button id="become-tutor-btn" className="home-btn"> Become Tutor </button>
+          </span>
+        </div>
+        <img src={process.env.PUBLIC_URL + '/FP-1-Child-image.png'}
+          alt="Home Page Banner"
+          width="509"
+          height="650" />
+      </div>
+    </section>
+  );
 }
 
 
 
 render(
   <div>
-    <Header/>
-    <Banner/>
+    <Header />
+    <Banner />
   </div>,
   document.getElementById('root')
 )
