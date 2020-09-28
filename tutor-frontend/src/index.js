@@ -30,7 +30,7 @@ const Header = () => {
 
 
       </nav> */}
-
+    <img id="circle-img" src={process.env.PUBLIC_URL + '/circle.png'} alt="banner-cicle" width="500" height="500"/>
     </header>
   );
 }
@@ -40,8 +40,8 @@ const Banner = () => {
     <section id="banner" >
       <div id="banner-img" > { /* <img src={process.env.PUBLIC_URL + '/FP-1-Text.svg'} alt="banner-text" width="791" height="187"/> */}
         <div id="banner-div">
-          <h6 id="banner-heading" > Achieve Top Grades <br/> With Us. </h6>
-          <p id="banner-text" > Education is the most powerful weapen we can use to change. </p>
+          <h1 id="banner-heading" > Achieve Top Grades <br/> With Us. </h1>
+          <p id="banner-text" > Education is the most powerful weapen we can <br/>use to change the world. </p>
           <span>
             <button id="find-tutor-btn" className="home-btn"> Find Tutor </button>
             <button id="become-tutor-btn" className="home-btn"> Become Tutor </button>
@@ -51,6 +51,7 @@ const Banner = () => {
           alt="Home Page Banner"
           width="509"
           height="650" />
+        
       </div>
     </section>
   );
