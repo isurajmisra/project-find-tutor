@@ -30,7 +30,7 @@ const Header = () => {
 
 
       </nav> */}
-    <img id="circle-img" src={process.env.PUBLIC_URL + '/circle.png'} alt="banner-cicle" width="500" height="500"/>
+    <img id="circle-img" src={process.env.PUBLIC_URL + '/crop-circle.png'} alt="banner-cicle" width="300" height="300"/>
     </header>
   );
 }
