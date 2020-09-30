@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="71" viewBox="0 0 38 71">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #707070;
+        stroke-width: 2px;
+        font-size: 60px;
+        font-family: ArialMT, Arial;
+        letter-spacing: 0.071em;
+      }
+    </style>
+  </defs>
+  <text id="FP_2_Textview_three" data-name="FP 2 Textview_three" class="cls-1" transform="translate(2 56)"><tspan x="0" y="0">3</tspan></text>
+</svg>

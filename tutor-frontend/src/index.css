@@ -13,11 +13,9 @@ header {
     display: flex;
 }
 
-
-header>a{
+header>a {
     margin-left: 17em;
 }
-
 
 .navbar {
     display: flex;
@@ -73,7 +71,7 @@ li {
     margin-bottom: 3em;
 }
 
-#banner-div{
+#banner-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -89,7 +87,6 @@ li {
     border-radius: 30px;
 }
 
-
 #find-tutor-btn {
     background-color: #2effb8;
     border: none;
@@ -97,8 +94,12 @@ li {
 }
 
 #become-tutor-btn {
-    background-color:white;
-    border:  #2effb8 4px solid;
+    background-color: white;
+    border: #2effb8 4px solid;
+}
+
+#banner-2 {
+    display: flex;
 }
 
 #banner-img {
@@ -107,7 +108,56 @@ li {
     justify-content: space-evenly;
 }
 
-#circle-img{
+#circle-img {
     position: absolute;
     writing-mode: vertical-rl;
+}
+
+#sec-2-heading {
+    margin-top: 1em;
+    font-size: 60px;
+    font-family: UtopiaStd-BlackHeadline, Utopia Std Headline;
+    font-weight: 800;
+    letter-spacing: 0.071em;
+    height: auto;
+}
+
+.numbers {
+    stroke: #707070;
+    stroke-width: 2px;
+    font-size: 60px;
+    font-family: ArialMT, Arial;
+    position: absolute;
+
+}
+
+.steps{
+    display: flex;
+}
+
+.steps-text{
+    font-size: 25px;
+        font-family: ArialNarrow, Arial;
+        letter-spacing: 0.042em;
+        width:250px
+}
+
+#main-steps-div{
+    display: flex;
+    flex-direction: column;
+}
+.steps-text-span{
+    align-self: center;
+    margin-left: 1em;
+}
+
+
+.steps:first-child{
+    justify-content: center;
+}
+.steps:nth-child(2){
+    justify-content: flex-end;
+}
+.steps:nth-child(3){
+    justify-content: center;
 }
