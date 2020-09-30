@@ -19,3 +19,6 @@
 * python3 -m venv env
 * source env/bin/activate
 * pip install -r requirements.txt
+
+
+![HomePage](https://github.com/isurajmisra/project-find-tutor/blob/sm/frontend/tutor-frontend/public/Screenshot_2020-09-30_00-09-49.png)
