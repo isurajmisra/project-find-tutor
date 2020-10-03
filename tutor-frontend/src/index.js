@@ -9,7 +9,7 @@ const Header = () => {
       <a href="/" > < img src={logo}
         alt="logo"
         width="200"
-        height="150" /> </a>
+        height="100" /> </a>
       {/* <nav class="navbar" >
 
 
@@ -65,41 +65,71 @@ const SectionTwo = () => {
         width="834"
         height="849" />
       <div id="sec-2-div">
-        <h2 id="sec-2-heading">Join Us in 3 Simple Steps.</h2>
+        <h1 id="sec-2-heading">Join Us in 3 Simple Steps.</h1>
         <div id="main-steps-div">
-      <div className="steps">
-      <svg width="190" height="190">
-          <circle cx="100" cy="100" r="80" stroke="gray" stroke-width="10" fill="white" />
-          <text className="numbers" x="50%" y="50%" text-anchor="middle" fill="black" font-size="100px" font-family="Arial" dy=".3em">1</text>
+          <div className="steps">
+            <svg width="190" height="190">
+              <circle cx="100" cy="100" r="80" stroke="gray" stroke-width="10" fill="white" />
+              <text className="numbers" x="50%" y="50%" text-anchor="middle" fill="black" font-size="100px" font-family="Arial" dy=".3em">1</text>
         Sorry, your browser does not support inline SVG.
       </svg>
-      <span className="steps-text-span" >
-        <p className="steps-text">Enter Your address and search the tutor from your nearby location.</p>
-      </span>
-      </div>
-      <div className="steps">
-      <span className="steps-text-span" >
-        <p className="steps-text">Select your preferred tutor course from the list.</p>
-      </span>
-      <svg width="190" height="190">
-          <circle cx="100" cy="100" r="80" stroke="gray" stroke-width="10" fill="white" />
-          <text className="numbers" x="50%" y="50%" text-anchor="middle" fill="black" font-size="100px" font-family="Arial" dy=".3em">2</text>
+            <span className="steps-text-span" >
+              <p className="steps-text">Enter Your address and search the tutor from your nearby location.</p>
+            </span>
+          </div>
+          <div className="steps">
+            <span className="steps-text-span" >
+              <p className="steps-text">Select your preferred tutor course from the list.</p>
+            </span>
+            <svg width="190" height="190">
+              <circle cx="100" cy="100" r="80" stroke="gray" stroke-width="10" fill="white" />
+              <text className="numbers" x="50%" y="50%" text-anchor="middle" fill="black" font-size="100px" font-family="Arial" dy=".3em">2</text>
         Sorry, your browser does not support inline SVG.
       </svg>
-      
-      </div>
-      <div className="steps">
-      <svg width="190" height="190">
-          <circle cx="100" cy="100" r="80" stroke="gray" stroke-width="10" fill="white" />
-          <text className="numbers" x="50%" y="50%" text-anchor="middle" fill="black" font-size="100px" font-family="Arial" dy=".3em">3</text>
+
+          </div>
+          <div className="steps">
+            <svg width="190" height="190">
+              <circle cx="100" cy="100" r="80" stroke="gray" stroke-width="10" fill="white" />
+              <text className="numbers" x="50%" y="50%" text-anchor="middle" fill="black" font-size="100px" font-family="Arial" dy=".3em">3</text>
         Sorry, your browser does not support inline SVG.
       </svg>
-      <span className="steps-text-span" >
-        <p className="steps-text">Verify the tutor and register yourself.</p>
-      </span>
+            <span className="steps-text-span" >
+              <p className="steps-text">Verify the tutor and register yourself.</p>
+            </span>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
+    </section>
+  )
+}
+
+const FormSection = ()=>{
+  return (
+    <section id="section-3">
+      <div id="section-3-div">
+      <h1>Start Your Journey Now With Us.</h1>
+<div id="form-div">
+      <form>
+        <div>
+        <select className="form-select" name="Class">
+          <option>Class</option>
+        </select><br/>
+        <select className="form-select" name="State">
+          <option>State</option>
+        </select>
+        <select className="form-select" name="City">
+          <option>City</option>
+        </select><br/>
+        <input className="form-input"  type='text' placeholder="Land Mark"/>
+        <input className="form-input"  type='number' placeholder="Pincode"/>
+        </div>
+        <button id="form-search-btn">Search</button>
+      </form>
+      <img src={process.env.PUBLIC_URL + '/Home-Sec-3/sec-3.png'}
+        alt="Home Page Banner"
+        width="835"
+        height="528" /></div></div>
     </section>
   )
 }
@@ -109,6 +139,7 @@ render(
     <Header />
     <Banner />
     <SectionTwo />
+    <FormSection/>
   </div>,
   document.getElementById('root')
 )
